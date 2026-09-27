@@ -1,0 +1,12 @@
+{
+  "name": "pathfynder-project-management-app",
+  "version": "0.1.0",
+  "description": "PathFynder local MVP prototype — Express + plain HTML/CSS/JS, JSON file store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

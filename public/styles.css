@@ -1,0 +1,6 @@
+body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+form { display: grid; gap: 0.75rem; margin: 1rem 0; }
+label { display: grid; gap: 0.25rem; }
+input, button { padding: 0.5rem; font-size: 1rem; }
+.step { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; margin: 0.5rem 0; }
+.risk { background: #fff8e1; border: 1px solid #f0d27a; border-radius: 8px; padding: 0.5rem 0.75rem; margin: 0.5rem 0; }

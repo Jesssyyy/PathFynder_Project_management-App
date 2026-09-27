@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PathFynder — Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>PathFynder</h1>
+    <p>Turn a rough goal into a step-by-step roadmap.</p>
+    <form id="project-form">
+      <label>What do you want to do?
+        <input id="what" name="what" required placeholder="e.g. Open a small bakery" />
+      </label>
+      <label>Where is it happening?
+        <input id="where" name="where" required placeholder="e.g. Leeds, UK" />
+      </label>
+      <button type="submit">Build roadmap</button>
+    </form>
+    <section id="result"></section>
+    <section>
+      <h2>Saved projects</h2>
+      <ul id="projects"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
