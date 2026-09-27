@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PathFynder — Design System</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --pf-primary: #0e7c6b;
+      --pf-primary-dark: #0a5c50;
+      --pf-accent: #f2b705;
+      --pf-risk-bg: #f5c518;
+      --pf-risk-border: #1d2b26;
+      --pf-ink: #1d2b26;
+      --pf-muted: #5f6f6a;
+      --pf-bg: #f6f8f7;
+      --pf-card: #ffffff;
+    }
+    body { background: var(--pf-bg); color: var(--pf-ink); }
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.75rem; margin: 1rem 0; }
+    .swatch { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: var(--pf-card); }
+    .swatch .chip { height: 64px; }
+    .swatch p { margin: 0; padding: 0.5rem; font-size: 0.85rem; }
+    .btn { display: inline-block; border: none; border-radius: 8px; padding: 0.6rem 1.2rem; font-size: 1rem; cursor: pointer; }
+    .btn-primary { background: var(--pf-primary); color: #fff; }
+    .btn-primary:hover { background: var(--pf-primary-dark); }
+    .btn-secondary { background: #fff; color: var(--pf-primary-dark); border: 1px solid var(--pf-primary); }
+    .sample-input { width: 100%; padding: 0.6rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 8px; }
+    .sample-input:focus { outline: 2px solid var(--pf-primary); border-color: var(--pf-primary); }
+    section { background: var(--pf-card); border: 1px solid #e3e8e6; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+    h1 { color: var(--pf-primary-dark); }
+    .muted { color: var(--pf-muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>PathFynder Design System</h1>
+    <p class="muted">Local prototype styles — colors, type, buttons, inputs.</p>
+
+    <section>
+      <h2>Colors</h2>
+      <div class="swatches">
+        <div class="swatch"><div class="chip" style="background:#0e7c6b"></div><p>Primary #0e7c6b</p></div>
+        <div class="swatch"><div class="chip" style="background:#0a5c50"></div><p>Primary dark #0a5c50</p></div>
+        <div class="swatch"><div class="chip" style="background:#f2b705"></div><p>Accent #f2b705</p></div>
+        <div class="swatch"><div class="chip" style="background:#f5c518;border:2px solid #1d2b26;box-sizing:border-box"></div><p>Risk bg #f5c518</p></div>
+        <div class="swatch"><div class="chip" style="background:#1d2b26"></div><p>Ink #1d2b26</p></div>
+        <div class="swatch"><div class="chip" style="background:#5f6f6a"></div><p>Muted #5f6f6a</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fonts</h2>
+      <p style="font-size:2rem;margin:0">Heading — system-ui 2rem</p>
+      <p style="font-size:1.25rem">Subheading — system-ui 1.25rem</p>
+      <p>Body — system-ui 1rem. Plain, human wording, no jargon.</p>
+      <p class="muted">Muted — for helper text and placeholders.</p>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <button class="btn btn-primary" type="button">Build roadmap</button>
+      <button class="btn btn-secondary" type="button">Save idea</button>
+    </section>
+
+    <section>
+      <h2>Input</h2>
+      <label>What do you want to do?
+        <input class="sample-input" placeholder="e.g. Open a small bakery" />
+      </label>
+    </section>
+  </main>
+</body>
+</html>
