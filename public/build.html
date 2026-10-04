@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PathFynder — Build your project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a class="brand" href="/">Path<span class="accent">Fynder</span></a>
+    <span class="navlinks">
+      <a href="/canvas.html">Canvas</a>
+      <a href="/build.html" class="active">Build</a>
+      <a href="/brainstorm.html">Brainstorm</a>
+    </span>
+  </nav>
+  <main>
+    <section class="card">
+      <h2>Build your project</h2>
+      <form id="project-form">
+        <label>What do you want to do?
+          <input id="what" name="what" required placeholder="e.g. Open a small bakery" />
+        </label>
+        <label>Where is it happening?
+          <input id="where" name="where" required placeholder="e.g. Leeds, UK" />
+        </label>
+        <button type="submit">Build roadmap</button>
+      </form>
+    </section>
+    <section class="card" id="result-card" hidden>
+      <div id="result"></div>
+    </section>
+    <section class="card">
+      <h2>Saved projects</h2>
+      <ul id="projects"></ul>
+    </section>
+  </main>
+  <script src="store.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PathFynder — Brainstorm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a class="brand" href="/">Path<span class="accent">Fynder</span></a>
+    <span class="navlinks">
+      <a href="/canvas.html">Canvas</a>
+      <a href="/build.html">Build</a>
+      <a href="/brainstorm.html" class="active">Brainstorm</a>
+    </span>
+  </nav>
+  <main>
+    <section class="card">
+      <h2>Brainstorm</h2>
+      <p class="empty">No structure, no pressure — jot ideas, then turn one into a project.</p>
+      <form id="note-form">
+        <label>New idea
+          <textarea id="note-text" rows="3" required placeholder="e.g. Weekend food market stall"></textarea>
+        </label>
+        <button type="submit">Save idea</button>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Ideas</h2>
+      <ul id="notes"></ul>
+    </section>
+  </main>
+  <script src="store.js"></script>
+  <script src="brainstorm.js"></script>
+</body>
+</html>
